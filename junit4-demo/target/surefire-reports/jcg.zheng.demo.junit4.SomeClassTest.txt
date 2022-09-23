@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: jcg.zheng.demo.junit4.SomeClassTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in jcg.zheng.demo.junit4.SomeClassTest
