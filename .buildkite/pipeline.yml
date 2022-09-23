@@ -3,3 +3,11 @@ steps:
     command: echo "Hello Buildkite !!"
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
+    
+  - label: ":lollipop: Test"
+    command: "mvn test"
+    key: test-step
+    plugins:
+      - test-collector#v1.0.0:
+          files: "./junit5-demo/target/surefire-reports/TEST-jcg.zheng.demo.junit5.SomeClassTest.xml"
+          format: "junit"
