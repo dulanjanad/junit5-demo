@@ -12,5 +12,5 @@ steps:
     key: test-step
     plugins:
       - test-collector#v1.0.0:
-          files: "/var/lib/buildkite-agent/test/junit-test.xml"
+          files: "/home/dulanjana_aws/junit-test.xml"
           format: "junit"
