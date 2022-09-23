@@ -3,6 +3,9 @@ steps:
     command: echo "Hello Buildkite !!"
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
+  
+  - label: ":bulb: Clean Package"
+    command: "mvn clean"
     
   - label: ":lollipop: Test"
     command: "mvn test"
