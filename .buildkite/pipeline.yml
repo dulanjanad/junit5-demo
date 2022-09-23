@@ -4,13 +4,13 @@ steps:
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
   
-  - label: ":bulb: Clean Package"
-    command: "mvn clean"
+  #- label: ":bulb: Clean Package"
+  #  command: "mvn clean"
     
   - label: ":lollipop: Test"
     command: "mvn test"
     key: test-step
     plugins:
       - test-collector#v1.0.0:
-          files: "/var/lib/buildkite-agent/builds/instance-1-1/itelasoft/test-analytics/junit5-demo/target/surefire-reports/TEST-jcg.zheng.demo.junit5.SomeClassTest.xml"
+          files: "/var/lib/buildkite-agent/test/junit-test.xml"
           format: "junit"
