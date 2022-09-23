@@ -12,5 +12,5 @@ steps:
     key: test-step
     plugins:
       - test-collector#v1.0.0:
-          files: "./junit5-demo/target/surefire-reports/TEST-jcg.zheng.demo.junit5.SomeClassTest.xml"
+          files: "/var/lib/buildkite-agent/builds/instance-1-1/itelasoft/test-analytics/junit5-demo/target/surefire-reports/TEST-jcg.zheng.demo.junit5.SomeClassTest.xml"
           format: "junit"
